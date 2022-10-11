@@ -38,6 +38,13 @@ Mở lịch sử reflog : git reflog
 Tìm commit mới nhất liên quan đến việc xóa 
 Phục hồi nhánh bằng cách checkout đến commit đã chọn: git checkout -b [branch_name] [commit_id]
 
+- Git reset
+git reset [commit_id] --hard : HEAD lúc này sẽ quay về commit được chọn và working tree sẽ trống trơn
+Ngoài ra còn có:
+git reset [commit_id] --sort : Sẽ giữ lại cả index(của commit đích) và working tree hiện tại. Hay nói đơn giản là nó quay lại trạng thái mà commit đó chưa được tạo (chỉ mới add và staging area thôi)
+git reset [commit_id] --mixed : Sẽ xóa bỏ index (Hay staging area của commit đích) còn working tree hiện tại sẽ còn nguyên. Hay nói đơn giản hơn nó sẽ nhảy đến trạng thái commit đã tạo và HEAD đã trỏ đến commit đó
+
+
 
 
 
