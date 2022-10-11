@@ -1,7 +1,14 @@
 - Git Stash:
 Trong trường hợp bạn chuyển sang nhánh mới khi đang code dang dở, thì sẽ bị yêu cầu commit code, tuy nhiên không phải lúc nào bạn cũng muốn commit code cả.
 Có một cách là sẽ đẩy toàn bộ working tree hiện tại vào stash bằng lệnh git stash. Sau đó khi muốn lấy lại working tree đang làm thì dùng lệnh git stash pop để lấy ra.
+git stash
+git stash pop
 
 - Git Diff:
 git diff master develop
 git diff master develop --name-only
+
+- Git pull: Cập nhật local branch với thay đổi ở remote branch
+Khi hai người cùng làm việc trên một nhánh, việc người này phải cập nhật code mới của người kia là điều bình thường. Để làm việc này dùng lệnh git pull
+git pull origin develop
+
