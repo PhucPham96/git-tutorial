@@ -28,5 +28,10 @@ git pull origin develop
 Trường hợp muốn tạo một nhánh có code tương ứng với một commit nào đó thì sẽ tạo ra 1 nhánh mới với HEAD trỏ tới commit hoặc một tag (git tag) cụ thể nào đó
 git checkout -b [branch_name] [commit_id]
 
+- Git delete : xóa nhánh
+git branch -d [branch_name]
+
+
+
 
 
