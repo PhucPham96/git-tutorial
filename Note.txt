@@ -30,6 +30,14 @@ git checkout -b [branch_name] [commit_id]
 
 - Git delete : xóa nhánh
 git branch -d [branch_name]
+Tham số -d ám chỉ việc xóa nhánh khi nhánh đó đã đồng bộ với nhánh upstream tương ứng hoặc đã merge thành công vào HEAD hiện tại
+Nếu muốn xóa bằng mọi giá thì dùng tham số -D (git sẽ xóa nhánh bất chấp bất cứ điều gì xảy ra)
+
+- Phục hồi branch khi đã xóa
+Mở lịch sử reflog : git reflog
+Tìm commit mới nhất liên quan đến việc xóa 
+Phục hồi nhánh bằng cách checkout đến commit đã chọn: git checkout -b [branch_name] [commit_id]
+
 
 
 
