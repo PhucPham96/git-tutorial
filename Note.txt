@@ -24,3 +24,9 @@ git diff master develop --name-only
 Khi hai người cùng làm việc trên một nhánh, việc người này phải cập nhật code mới của người kia là điều bình thường. Để làm việc này dùng lệnh git pull
 git pull origin develop
 
+- Tạo mới nhánh tại một commit cụ thể
+Trường hợp muốn tạo một nhánh có code tương ứng với một commit nào đó thì sẽ tạo ra 1 nhánh mới với HEAD trỏ tới commit hoặc một tag (git tag) cụ thể nào đó
+git checkout -b [branch_name] [commit_id]
+
+
+
