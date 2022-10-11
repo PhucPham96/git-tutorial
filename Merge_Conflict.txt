@@ -1,4 +1,4 @@
 this is line 1
 this is line 2(Change by develop)
 this is line 3
-this is line 4
+this is line 4(change by merge conflict branch)
